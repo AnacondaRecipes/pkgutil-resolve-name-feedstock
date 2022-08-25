@@ -34,7 +34,7 @@ about:
   home: https://github.com/graingert/pkgutil-resolve-name
   summary: Backport of Python 3.9's pkgutil.resolve_name; resolves a name to an object.
   license: BSD-4-Clause
-  license_file: LICENSE
+  license_file: LICENSE.txt
   license_family: BDS-4
   dev_url: https://github.com/graingert/pkgutil-resolve-name
   doc_url: https://docs.python.org/3.9/library/pkgutil.html#pkgutil.resolve_name
