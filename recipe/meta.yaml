@@ -11,16 +11,17 @@ source:
   sha256: 357d6c9e6a755653cfd78893817c0853af365dd51ec97f3d358a819373bbd174
 
 build:
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
+  skip: true  # [py<37]
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
   host:
     - flit-core
     - pip
-    - python >=3.6
+    - python
   run:
-    - python >=3.6
+    - python
 
 test:
   imports:
@@ -33,9 +34,9 @@ test:
 about:
   home: https://github.com/graingert/pkgutil-resolve-name
   summary: Backport of Python 3.9's pkgutil.resolve_name; resolves a name to an object.
-  license: BSD-4-Clause
-  license_file: LICENSE.txt
-  license_family: BDS-4
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
   dev_url: https://github.com/graingert/pkgutil-resolve-name
   doc_url: https://docs.python.org/3.9/library/pkgutil.html#pkgutil.resolve_name
 
