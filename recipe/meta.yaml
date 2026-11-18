@@ -15,7 +15,7 @@ build:
 
 requirements:
   host:
-  # The [tool.flit.metadata] table is no longer supported. Switch to the standard [project] table or require flit_core<4 to build this package.
+  #  The [tool.flit.metadata] table is no longer supported. Switch to the standard [project] table or require flit_core<4 to build this package.
     - flit-core <4
     - pip
     - python
