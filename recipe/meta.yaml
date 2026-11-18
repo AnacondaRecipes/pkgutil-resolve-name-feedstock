@@ -10,12 +10,13 @@ source:
   sha256: 357d6c9e6a755653cfd78893817c0853af365dd51ec97f3d358a819373bbd174
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
   host:
-    - flit-core
+  # The [tool.flit.metadata] table is no longer supported. Switch to the standard [project] table or require flit_core<4 to build this package.
+    - flit-core <4
     - pip
     - python
     - setuptools
